@@ -21,7 +21,7 @@ int main() {
     setlocale(LC_ALL, "Rus");
     int *array;
     int n;
-    printf("Размера массива: ");
+    printf("Размер массива: ");
     scanf_s("%d", &n);
     array = (int*)malloc(n * sizeof(int));
 
