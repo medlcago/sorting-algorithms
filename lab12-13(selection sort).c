@@ -5,13 +5,15 @@
 
 void selection_sort(int arr[], int n) {
 	for (int i = 0; i < n - 1; i++) {
+		int min_v = i;
 		for (int j = i + 1; j < n; j++) {
-			if (arr[i] > arr[j]) {
-				int tmp = arr[j];
-				arr[j] = arr[i];
-				arr[i] = tmp;
+			if (arr[min_v] > arr[j]) {
+				min_v = j;
 			}
 		}
+		int temp = arr[i];
+		arr[i] = arr[min_v];
+		arr[miv_v] = temp;
 	}
 }
 
